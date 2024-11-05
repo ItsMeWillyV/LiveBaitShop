@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+:root {
+    --primary: #0c6d1c;
+    --secondary: #3eca56;
+    --white: #eeeeee;
+}
+
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: beige;
+}
+
+/* 
+    Header
+*/
+
+header {
+    text-align: center;
+    background-image: linear-gradient(var(--primary), var(--secondary));
+    padding:2px;
+    font-size: 1.5em;
+    clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 100%, 80% 90%, 50% 100%, 20% 90%, 0 100%, 0% 35%, 0 0);
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+header h1 {
+    font-family: "Permanent Marker", cursive;
+    color: var(--white);
+    margin: 0;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li a {
+    display: inline-block;
+    background-image: url("media/nav.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0.5em 1.2em 0.5em 1.2em;
+    color: var(--white);
+    text-decoration: none;
+    transform: rotate(0deg) scale(1);
+    transition: 0.5s;
+    font-variant: small-caps;
+    margin: 1em;
+    margin-top: 0;
+}
+
+nav ul li a:hover {
+    transform: rotate(-10deg) scale(1.2);
+    transition: 0.5s;
+}
+
+/* 
+    Main
+*/
+
+section {
+    width: 80%;
+    margin: auto;
+    margin-top: 1em;
+    background-color: var(--white);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+section h2, .card h3 {
+    margin: 0;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 #00000033;
+    transition: 0.2s;
+    border-radius: 15px;
+    padding: 1em;
+    margin-bottom: 1em;
+    margin-top: 3em;
+}
+  
+.card:hover {
+    box-shadow: 0 8px 16px 0 #00000033;
+}
+
+.facebook {
+    display: block;
+    background: #1877F2;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    width: 14em;
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.facebook:hover {
+    background-color: #1463c9;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+#waves {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+@media screen and (max-width: 490px) {
+    body {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    body {
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    body {
+        font-size: 0.6em;
+    }
+}
