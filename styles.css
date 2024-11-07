@@ -120,6 +120,21 @@ section h2, .card h3 {
     z-index: -1;
 }
 
+.bait-container {
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    gap: 1em;
+}
+
+.bait-container > div {
+    flex: 1;
+}
+
+.bait-container li {
+    list-style: none;
+}
+
 @media screen and (max-width: 490px) {
     body {
         font-size: 0.8em;
