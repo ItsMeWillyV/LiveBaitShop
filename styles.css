@@ -111,7 +111,7 @@ section h2, .card h3 {
     transition: 0.5s;
 }
 
-#waves {
+.bg {
     position: fixed;
     right: 0;
     bottom: 0;
