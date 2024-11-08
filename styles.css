@@ -71,6 +71,7 @@ nav ul li a {
     font-variant: small-caps;
     margin: 1em;
     margin-top: 0;
+    font-weight: bold;
 }
 
 nav ul li a:hover {
@@ -90,6 +91,7 @@ input {
     border-radius: 5px;
     font-size: 1.2em;
     margin-bottom: 5px;
+    font-weight: bold;
 }
 
 button {
@@ -99,7 +101,16 @@ button {
     text-align: center;
     height: 2em;
     border-radius: 5px;
-    font-size: 1.2em;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: 0.5s;
+    color: var(--white);
+    font-weight: bold;
+}
+
+button:hover {
+    transition: 0.5s;
+    transform: scale(1.05);
 }
 
 /* 
