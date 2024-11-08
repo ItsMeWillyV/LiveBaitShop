@@ -136,6 +136,26 @@ section h2, .card h3 {
     list-style: none;
 }
 
+input {
+    width: 90%;
+    margin-left: 5%;
+    display: block;
+    height: 2em;
+    border-radius: 5px;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+button {
+    width: 50%;
+    margin-left: 25%;
+    background-color: var(--secondary);
+    text-align: center;
+    height: 2em;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
 @media screen and (max-width: 490px) {
     body {
         font-size: 0.8em;
