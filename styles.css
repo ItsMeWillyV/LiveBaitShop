@@ -6,10 +6,27 @@
     --white: #eeeeee;
 }
 
+/* 
+    Main
+*/
+
 body {
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: beige;
+}
+
+section {
+    width: 80%;
+    margin: auto;
+    margin-top: 1em;
+    background-color: var(--white);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+section h2 {
+    margin: 0;
 }
 
 /* 
@@ -31,7 +48,6 @@ header {
 header h1 {
     font-family: "Permanent Marker", cursive;
     color: var(--white);
-    /* margin: 0; */
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
 }
@@ -63,21 +79,32 @@ nav ul li a:hover {
 }
 
 /* 
-    Main
+    Form
 */
 
-section {
-    width: 80%;
-    margin: auto;
-    margin-top: 1em;
-    background-color: var(--white);
-    padding: 15px;
-    border-radius: 15px;
+input {
+    width: 90%;
+    margin-left: 5%;
+    display: block;
+    height: 2em;
+    border-radius: 5px;
+    font-size: 1.2em;
+    margin-bottom: 5px;
 }
 
-section h2, .card h3 {
-    margin: 0;
+button {
+    width: 50%;
+    margin-left: 25%;
+    background-color: var(--secondary);
+    text-align: center;
+    height: 2em;
+    border-radius: 5px;
+    font-size: 1.2em;
 }
+
+/* 
+    Classes
+*/
 
 .card {
     box-shadow: 0 4px 8px 0 #00000033;
@@ -86,6 +113,10 @@ section h2, .card h3 {
     padding: 1em;
     margin-bottom: 1em;
     margin-top: 3em;
+}
+
+.card h3 {
+    margin: 0;
 }
   
 .card:hover {
@@ -136,25 +167,9 @@ section h2, .card h3 {
     list-style: none;
 }
 
-input {
-    width: 90%;
-    margin-left: 5%;
-    display: block;
-    height: 2em;
-    border-radius: 5px;
-    font-size: 1.2em;
-    margin-bottom: 5px;
-}
-
-button {
-    width: 50%;
-    margin-left: 25%;
-    background-color: var(--secondary);
-    text-align: center;
-    height: 2em;
-    border-radius: 5px;
-    font-size: 1.2em;
-}
+/* 
+    Breakpoints
+*/
 
 @media screen and (max-width: 490px) {
     body {
